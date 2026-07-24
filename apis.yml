@@ -1,8 +1,17 @@
 aid: bonsai
 name: Bonsai
-description: 'Bonsai is a company surfaced as a portfolio company of matrix-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: b2b. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Bonsai (hellobonsai.com) is an all-in-one business management platform for
+  service businesses -- freelancers, agencies, and firms -- consolidating client
+  management (CRM, pipeline, proposals, contracts, forms, client portal), project
+  management (tasks, Gantt, time tracking, timesheets, resource planning), and
+  financial management (invoicing, payments, expenses, bookkeeping, rate cards,
+  budgeting and profitability) into one system. Used by 500,000+ small businesses
+  globally. Bonsai exposes its programmatic surface through an official hosted MCP
+  (Model Context Protocol) server at mcp.hellobonsai.com so AI clients (Claude,
+  ChatGPT, Gemini, Cursor, Codex) can act on tasks, projects, deals, contacts,
+  time entries and invoices; a public REST API is documented as forthcoming.
+  Backed by Matrix Partners.
 url: https://raw.githubusercontent.com/api-evangelist/bonsai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +19,36 @@ x-backed-by:
 - matrix-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.prod.website-files.com/635ac9564cc3682ce1536786/673f6d94d320621186b12534_Social%20Meta%20Image%20(1).png
 tags:
 - Company
 - B2B
+- Business Management
+- Freelancing
+- Agencies
+- CRM
+- Project Management
+- Time Tracking
+- Invoicing
+- Proposals
+- Contracts
+- Accounting
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +56,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: MCPServer
+  url: mcp/bonsai-mcp.yml
+- type: Authentication
+  url: authentication/bonsai-authentication.yml
+- type: RateLimits
+  url: rate-limits/bonsai-rate-limits.yml
+- type: Conventions
+  url: conventions/bonsai-conventions.yml
+- type: Lifecycle
+  url: lifecycle/bonsai-lifecycle.yml
+- type: StatusPage
+  url: https://status.hellobonsai.com/
+- type: DomainSecurity
+  url: security/bonsai-domain-security.yml
+- type: TrustCenter
+  url: https://trust.hellobonsai.com
+- type: Documentation
+  url: https://docs.hellobonsai.com/
+- type: Pricing
+  url: https://www.hellobonsai.com/pricing
+- type: SignUp
+  url: https://app.hellobonsai.com/users/sign_up
+- type: Login
+  url: https://app.hellobonsai.com/users/sign_in
+- type: TermsOfService
+  url: https://www.hellobonsai.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.hellobonsai.com/legal/privacy
+- type: Blog
+  url: https://www.hellobonsai.com/blog
+- type: Support
+  url: https://www.hellobonsai.com/support
+- type: HelpCenter
+  url: https://help.hellobonsai.com/en/
 - type: Website
   url: https://hellobonsai.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

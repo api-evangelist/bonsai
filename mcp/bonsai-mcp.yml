@@ -1,0 +1,96 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://docs.hellobonsai.com/
+description: >-
+  Bonsai operates an official hosted/remote MCP (Model Context Protocol) server
+  at https://mcp.hellobonsai.com/mcp, letting AI clients (Claude, Claude Code,
+  Cursor, Codex, ChatGPT, Gemini, Microsoft Copilot and other HTTP MCP clients)
+  act on a user's Bonsai account. Authentication is OAuth 2.1 authorization-code
+  flow with PKCE handled by the AI client -- there are no API keys to create; the
+  MCP server never receives passwords and passes a short-lived (15 minute,
+  auto-refreshed) token through to Bonsai, acting strictly within the user's
+  existing Bonsai role. Parameter-level detail is slated for a future public REST
+  API reference. Tool list captured from the Bonsai MCP documentation.
+server:
+  name: bonsai
+  transport: http
+  url: https://mcp.hellobonsai.com/mcp
+  auth: oauth2
+  auth_detail: OAuth 2.1 authorization-code flow with PKCE; client-driven browser login; token TTL ~15 minutes, auto-refreshed
+  docs: https://docs.hellobonsai.com/
+connect:
+  claude_desktop: "Customize > Connectors > add custom connector with URL https://mcp.hellobonsai.com/mcp"
+  claude_code: "claude mcp add bonsai --transport http https://mcp.hellobonsai.com/mcp"
+  cursor: "add entry to mcp.json with url https://mcp.hellobonsai.com/mcp"
+  codex: "codex mcp add bonsai --url https://mcp.hellobonsai.com/mcp; codex mcp login bonsai"
+rate_limit: Up to 10,000 requests every 10 minutes per IP address.
+tools:
+  # Tasks
+  - name: list_tasks
+    description: List tasks.
+  - name: list_subtasks
+    description: List subtasks of a task.
+  - name: get_task
+    description: Get a single task.
+  - name: create_task
+    description: Create a task with assignment and due date.
+  - name: update_task
+    description: Update a task.
+  - name: destroy_task
+    description: Delete a task.
+  - name: list_task_statuses
+    description: List available task statuses.
+  # Projects
+  - name: list_projects
+    description: List projects.
+  - name: create_project
+    description: Create a new project.
+  # Team
+  - name: list_team_members
+    description: List team members.
+  # Deals / Pipeline
+  - name: list_deals
+    description: List deals by recency.
+  - name: create_deal
+    description: Create a deal.
+  - name: update_deal
+    description: Move a deal between statuses / update a deal.
+  - name: list_board_groups
+    description: List pipeline board groups.
+  # Contacts / Companies
+  - name: list_contacts
+    description: List contacts (optionally by organization).
+  - name: create_contact
+    description: Create a contact.
+  - name: update_contact
+    description: Update a contact.
+  - name: list_companies
+    description: List companies.
+  - name: create_company
+    description: Create a company.
+  - name: update_company
+    description: Update a company.
+  # Tags
+  - name: list_company_tags
+    description: List company tags.
+  # Time entries
+  - name: list_time_entries
+    description: List time entries.
+  - name: create_time_entry
+    description: Log billable hours.
+  - name: update_time_entry
+    description: Update a time entry.
+  # Invoices
+  - name: list_invoices
+    description: List invoices (including outstanding).
+  - name: create_invoice
+    description: Create an invoice with rates and terms.
+  - name: update_invoice
+    description: Update an invoice.
+  - name: create_invoice_item
+    description: Add a line item to an invoice.
+  - name: update_invoice_item
+    description: Update an invoice line item.
+  - name: destroy_invoice_item
+    description: Remove an invoice line item.

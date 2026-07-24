@@ -1,0 +1,23 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+generated: '2026-07-18'
+method: searched
+provider: Bonsai
+providerId: bonsai
+created: '2026-07-18'
+modified: '2026-07-18'
+tags:
+  - Rate Limiting
+  - MCP
+description: >-
+  Bonsai's hosted MCP server documents a request ceiling of up to 10,000 requests
+  every 10 minutes per IP address. Documentation notes normal usage stays well
+  within this threshold.
+sources:
+  - https://docs.hellobonsai.com/
+limits:
+  - name: MCP requests (per IP)
+    scope: ip
+    metric: requests_per_window
+    limit: 10000
+    timeFrame: 10-minutes

@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.hellobonsai.com/, https://status.hellobonsai.com/
+description: >-
+  Lifecycle posture for Bonsai. Bonsai currently exposes its programmatic surface
+  through a hosted MCP server; a public REST API with a versioned reference is
+  documented as forthcoming ("Parameter-level detail will live in the REST API
+  reference once the public API ships"). A live status page is published. No
+  formal deprecation/sunset policy was found published at the time of this pass.
+versioning:
+  scheme: unversioned-preview
+  current: mcp
+  note: Public REST API and its version reference are documented as not-yet-shipped.
+status_page: https://status.hellobonsai.com/
+deprecation:
+  policy_url: null
+  sunset_header: null
+sla:
+  url: null
+deprecated_operations: []

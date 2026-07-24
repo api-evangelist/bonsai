@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.hellobonsai.com/
+description: >-
+  Cross-cutting request/response semantics for Bonsai's programmatic surface as
+  documented for its hosted MCP server. A public REST API reference is documented
+  as forthcoming; the conventions below reflect the MCP surface available today.
+authentication:
+  style: oauth2-authorization-code-pkce
+  detail: Client-brokered OAuth 2.1 with PKCE; short-lived (~15 min) auto-refreshed bearer token; scoped to the user's Bonsai role.
+  ref: authentication/bonsai-authentication.yml
+rate_limiting:
+  scope: per-ip
+  limit: 10000 requests per 10 minutes
+  ref: rate-limits/bonsai-rate-limits.yml
+idempotency:
+  supported: false
+  note: No idempotency-key contract is documented for the current MCP surface.
+pagination:
+  documented: false
+  note: List tools exist (list_tasks, list_invoices, ...) but a paging contract is not published in the current docs.
+versioning:
+  scheme: unversioned-preview
+  note: Public REST API version reference documented as not-yet-shipped.
+  ref: lifecycle/bonsai-lifecycle.yml
+error_envelope:
+  documented: false

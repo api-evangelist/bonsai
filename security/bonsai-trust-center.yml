@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+probe: false
+source: https://trust.hellobonsai.com
+url: https://trust.hellobonsai.com
+platform: Vanta
+description: >-
+  Bonsai publishes a Vanta-hosted Trust Center at https://trust.hellobonsai.com.
+  The page is a JavaScript-rendered Vanta trust report (title "Vanta",
+  canonical https://trust.hellobonsai.com); specific named certifications and
+  documents are gated behind the Vanta viewer and were not machine-extractable
+  in this pass, so none are asserted here to avoid fabrication.
+certifications: []
+notes: >-
+  Certifications/compliance documents are available on request through the Vanta
+  Trust Center UI. A follow-up curated pass can enumerate the named frameworks
+  (e.g. SOC 2 / ISO 27001 / GDPR) once verified from the rendered report.
+evidence:
+  - source: https://trust.hellobonsai.com
+    kind: vanta-trust-center
+    detail: Vanta trust report shell served at trust.hellobonsai.com (verified live)
