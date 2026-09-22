@@ -46,6 +46,9 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://cdn.prod.website-files.com/635ac9564cc3682ce1536786/673f6d94d320621186b12534_Social%20Meta%20Image%20(1).png
+x-docs-platform: scalar
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-20
 tags:
 - Company
 - B2B
