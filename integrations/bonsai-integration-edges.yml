@@ -1,0 +1,455 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/bonsai/integrations
+- https://composio.dev/toolkits/bonsai
+checked:
+- https://composio.dev/toolkits/bonsai
+- https://monid.ai/tools/bonsai
+- https://n8n.io/integrations/bonsai/
+- https://zapier.com/apps/bonsai/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: bonsai
+  url: https://zapier.com/apps/bonsai/integrations
+  external_url: https://www.hellobonsai.com/
+  partner_tier: SILVER
+  triggers:
+  - key: contract_signed_by_contact
+    label: Contract Signed
+  - key: contract_viewed
+    label: Contract Viewed
+  - key: deal_updated
+    label: Deal Updated
+  - key: form_submitted
+    label: Form Submitted
+  - key: invoice_paid
+    label: Invoice Paid
+  - key: invoice_viewed
+    label: Invoice Viewed
+  - key: meeting_scheduled
+    label: Event Scheduled
+  - key: proposal_accepted
+    label: Proposal Accepted
+  - key: proposal_viewed
+    label: Proposal Viewed
+  - key: task_updated
+    label: Task Updated
+  actions:
+  - key: create_client
+    label: Create Client
+  - key: create_deal
+    label: Create Deal
+  - key: create_project
+    label: Create Project
+  - key: create_task
+    label: Create Task
+  - key: create_tasks_from_template
+    label: Create Tasks From Template
+  searches: []
+- marketplace: composio
+  channel: agent-gateway
+  app: bonsai
+  url: https://composio.dev/toolkits/bonsai
+  identity: action-prefix
+  actions:
+  - key: BONSAI_BONSAI_GET_CLUSTER_DETAILS
+  - key: BONSAI_BONSAI_LIST_SPACES
+  - key: BONSAI_GET_CLUSTER_DETAILS
+  - key: BONSAI_GET_SPACE_DETAILS
+  - key: BONSAI_LIST_SPACES
+edges:
+- partner_name: Google Drive
+  partner: google-drive
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/google-drive
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://www.google.com/drive/
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Slack
+  partner: slack
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/slack
+  direction: third-party
+  category: Team Chat
+  partner_url: https://slack.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Tally
+  partner: tally
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/tally
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://try.tally.so/zapier
+- partner_name: Notion
+  partner: notion
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/notion
+  direction: third-party
+  category: Task Management
+  partner_url: https://www.notion.so/
+- partner_name: Xero
+  partner: xero
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/xero
+  direction: third-party
+  category: Accounting
+  partner_url: https://xero5440.partnerlinks.io/uvwuuwrxyoi8
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: LeadConnector
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/leadconnector
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.leadconnectorhq.com/
+- partner_name: Calendly
+  partner: calendly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/calendly
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://calendly.com/?utm_medium=partner&utm_source=zapier&utm_campaign=main_partner_page&utm_content=main_inbound_link
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: Squarespace Forms
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/squarespace-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.squarespace.com/
+- partner_name: Google Calendar
+  partner: google-calendar
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/google-calendar
+  direction: third-party
+  category: Calendar
+  partner_url: https://calendar.google.com/
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: Squarespace Commerce
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/squarespace-commerce
+  direction: third-party
+  category: Website Builders
+  partner_url: https://squarespace.com/
+- partner_name: FreeAgent
+  partner: freeagent
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/freeagent
+  direction: third-party
+  category: Accounting
+  partner_url: http://www.freeagent.com/
+- partner_name: QuickBooks Online
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/quickbooks
+  direction: third-party
+  category: Accounting
+  partner_url: http://intuit.com/
+- partner_name: Fireflies.ai
+  partner: fireflies
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/fireflies
+  direction: third-party
+  category: Transcription
+  partner_url: https://fireflies.ai/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: Google Forms
+  partner: google-forms
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/google-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://google.com/
+- partner_name: Zoom
+  partner: zoom
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/zoom
+  direction: third-party
+  category: Video Conferencing
+  partner_url: https://www.zoom.us/
+- partner_name: Webflow
+  partner: webflow
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/webflow
+  direction: third-party
+  category: Website Builders
+  partner_url: https://webflow.com/
+- partner_name: Zoho CRM
+  partner: zoho-crm
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/zoho-crm
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://go.zoho.com/wOk
+- partner_name: Qwilr
+  partner: qwilr
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/qwilr
+  direction: third-party
+  category: Proposal & Invoice Management
+  partner_url: https://qwilr.com/
+- partner_name: Ziflow
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/ziflow
+  direction: third-party
+  category: Team Collaboration
+  partner_url: https://www.ziflow.com/
+- partner_name: Amazon Alexa
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/amazon-alexa
+  direction: third-party
+  category: Amazon
+  partner_url: https://alexa.amazon.com/
+- partner_name: Shopify
+  partner: shopify
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/shopify
+  direction: third-party
+  category: eCommerce
+  partner_url: https://www.shopify.com/
+- partner_name: Manychat
+  partner: manychat
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/manychat
+  direction: third-party
+  category: Social Media Marketing
+  partner_url: https://manychat.com/
+- partner_name: GitHub
+  partner: github
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/bonsai/integrations/github
+  direction: third-party
+  category: Developer Tools
+  partner_url: https://github.com/
+templates:
+- title: Log new paid Bonsai invoices in a Google Sheet
+  url: https://zapier.com/apps/bonsai/integrations/google-sheets/26706/log-new-paid-bonsai-invoices-in-a-google-sheet
+  apps:
+  - bonsai
+  - google-sheets
+- title: Create folders in Google Drive for newly signed contracts in Bonsai
+  url: https://zapier.com/apps/bonsai/integrations/google-drive/1258591/create-folders-in-google-drive-for-newly-signed-contracts-in-bonsai
+  apps:
+  - bonsai
+  - google-drive
+- title: Create tasks in ClickUp when new proposals are accepted in Bonsai
+  url: https://zapier.com/apps/bonsai/integrations/clickup/1664025/create-tasks-in-clickup-when-new-proposals-are-accepted-in-bonsai
+  apps:
+  - bonsai
+  - clickup
+- title: Create new Bonsai clients from newly created or updated HubSpot contacts
+  url: https://zapier.com/apps/bonsai/integrations/hubspot/1740923/create-new-bonsai-clients-from-newly-created-or-updated-hubspot-contacts
+  apps:
+  - hubspot
+  - bonsai
+- title: Get SMS alerts when new contracts are signed in Bonsai
+  url: https://zapier.com/apps/bonsai/integrations/sms/26705/get-sms-alerts-when-new-contracts-are-signed-in-bonsai
+  apps:
+  - bonsai
+  - sms
+- title: Subscribe new Bonsai clients to a Mailchimp list
+  url: https://zapier.com/apps/bonsai/integrations/mailchimp/29159/subscribe-new-bonsai-clients-to-a-mailchimp-list
+  apps:
+  - bonsai
+  - mailchimp
+- title: Send Bonsai proposal view notifications to a Slack channel
+  url: https://zapier.com/apps/bonsai/integrations/slack/26707/send-bonsai-proposal-view-notifications-to-a-slack-channel
+  apps:
+  - bonsai
+  - slack
+- title: Add new Bonsai clients to a Kit sequence
+  url: https://zapier.com/apps/bonsai/integrations/kit/29158/add-new-bonsai-clients-to-a-kit-sequence
+  apps:
+  - bonsai
+  - kit
+- title: Create blocks on specific pages in roam-bot for newly accepted Bonsai proposals
+  url: https://zapier.com/apps/bonsai/integrations/roam-bot/825380/create-blocks-on-specific-pages-in-roam-bot-for-newly-accepted-bonsai-proposals
+  apps:
+  - bonsai
+  - roam-bot
+- title: Create Slack channel messages for new signed contracts in Bonsai
+  url: https://zapier.com/apps/bonsai/integrations/slack/1253312/create-slack-channel-messages-for-new-signed-contracts-in-bonsai
+  apps:
+  - bonsai
+  - slack
+- title: Send Slack channel messages for newly paid Bonsai invoices
+  url: https://zapier.com/apps/bonsai/integrations/slack/1253313/send-slack-channel-messages-for-newly-paid-bonsai-invoices
+  apps:
+  - bonsai
+  - slack
+- title: Send Slack channel messages when new proposals are accepted in Bonsai
+  url: https://zapier.com/apps/bonsai/integrations/slack/1254788/send-slack-channel-messages-when-new-proposals-are-accepted-in-bonsai
+  apps:
+  - bonsai
+  - slack
+template_total: 228
