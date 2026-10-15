@@ -222,7 +222,6 @@
   arazzo: null
 - slug: bonsai-monday-com
   label: monday.com
-  partner: monday-com
   partner_name: monday.com
   category: Project Management
   type: marketplace
@@ -407,5 +406,30 @@
   channel: ipaas-usage
   evidence: https://zapier.com/apps/bonsai/integrations/github
   source: edge
+  status: pending-partner-spec
+  arazzo: null
+- slug: bonsai-zapier
+  label: Zapier
+  partner: zapier
+  partner_name: Zapier
+  type: marketplace
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  evidence: https://zapier.com/apps/bonsai/integrations
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Bonsai
+    matched_domain: hellobonsai.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: bonsai
+    beta: false
+    builder: unknown (not in the directory record)
   status: pending-partner-spec
   arazzo: null
