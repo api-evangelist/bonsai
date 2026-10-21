@@ -9,6 +9,11 @@ checked:
 - https://n8n.io/integrations/bonsai/
 - https://zapier.com/api/v4/apps/
 - https://zapier.com/apps/bonsai/integrations
+- https://500.co/api/startups
+- https://500.co/companies
+- https://www.antler.co/portfolio
+- https://www.techstars.com/portfolio
+- https://www.ycombinator.com/companies
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -445,6 +450,35 @@ edges:
   direction: third-party
   category: Social Media Marketing
   partner_url: https://manychat.com/
+- partner_name: Y Combinator
+  partner: y-combinator
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.ycombinator.com/companies/bonsai
+  category: accelerator portfolio participation
+  contract_reference:
+    register: Y Combinator company directory (ycombinator.com/companies/<slug>)
+    standard: null
+    spec_file: null
+    role: accelerator-portfolio-company
+    registered_name: Bonsai
+    register_id: https://www.ycombinator.com/companies/bonsai
+    register_country: US
+    register_website: https://www.hellobonsai.com
+    matched_domain: hellobonsai.com
+    matched_by: domain
+    signal_note: 'participation only: the accelerator''s own portfolio register lists the company (cohort / investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-accelerator-portfolios.py
+    detected: '2026-10-21'
+    batch: Winter 2016
+    year: '2016'
+    status: Acquired
+  detected_by: sweep-accelerator-portfolios.py
+  first_seen: '2026-10-21'
 templates:
 - title: Log new paid Bonsai invoices in a Google Sheet
   url: https://zapier.com/apps/bonsai/integrations/google-sheets/26706/log-new-paid-bonsai-invoices-in-a-google-sheet
